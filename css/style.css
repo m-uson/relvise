@@ -50,6 +50,10 @@ body {
   }
 }
 
+.body-lock {
+  overflow: hidden;
+}
+
 .header {
   background-image: url("../img/background.jpg");
   background-size: cover;
@@ -159,7 +163,7 @@ body {
 }
 @media (max-width: 425px) {
   .header__menu-list {
-    margin-bottom: 5px;
+    margin-bottom: 20px;
   }
 }
 .header__menu-list a {
@@ -170,13 +174,21 @@ body {
   text-align: center;
   letter-spacing: 0.2px;
   color: #737373;
-  margin-right: 20px;
   text-decoration: none;
   cursor: pointer;
 }
+@media screen and (max-width: 425px) {
+  .header__menu-list a {
+    font-size: 25px;
+  }
+}
 .header .is-active {
   font-weight: 900;
-  font-size: 18px;
+}
+@media screen and (max-width: 425px) {
+  .header .is-active {
+    font-size: 25px;
+  }
 }
 .header__content {
   width: 500px;
