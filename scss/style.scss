@@ -59,6 +59,9 @@ $v-color: #737373;
     align-items: center;
     height: 100px;
     margin-bottom: 80px;
+    @media (max-width: 425px) {
+      justify-content: space-between;
+    }
   }
 
   &__logo {
@@ -71,6 +74,19 @@ $v-color: #737373;
     margin-right: 132px;
   }
 
+  &__burger {
+    display: none;
+    @media (max-width: 425px) {
+      display: block;
+    }
+    span {
+      display: flex;
+      width: 20px;
+      height: 2px;
+      background: $b-color;
+      margin-bottom: 6px;
+    }
+  }
   &__menu {
     display: flex;
     @media screen and (max-width: 425px) {

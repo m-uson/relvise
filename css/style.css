@@ -68,6 +68,11 @@ body {
   height: 100px;
   margin-bottom: 80px;
 }
+@media (max-width: 425px) {
+  .header__top {
+    justify-content: space-between;
+  }
+}
 .header__logo {
   font-style: normal;
   font-weight: 700;
@@ -76,6 +81,21 @@ body {
   letter-spacing: 0.1px;
   color: #252b42;
   margin-right: 132px;
+}
+.header__burger {
+  display: none;
+}
+@media (max-width: 425px) {
+  .header__burger {
+    display: block;
+  }
+}
+.header__burger span {
+  display: flex;
+  width: 20px;
+  height: 2px;
+  background: #252b42;
+  margin-bottom: 6px;
 }
 .header__menu {
   display: flex;
@@ -160,7 +180,7 @@ body {
   }
 }
 .header__button {
-  height: 30px;
+  height: 40px;
 }
 @media (max-width: 375px) {
   .header__button {
