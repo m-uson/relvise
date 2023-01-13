@@ -2,11 +2,18 @@ const navItems = document.querySelectorAll(".header__menu li a");
 const burgerBtn = document.querySelector(".header__burger-btn");
 const menuBtn = document.querySelector(".header__menu");
 const body = document.querySelector("body"); // .body-lock {overflow: hidden}
+const menuList = document.querySelectorAll("li a");
 
 burgerBtn.addEventListener("click", function () {
   burgerBtn.classList.toggle("active");
   menuBtn.classList.toggle("menu-active");
   body.classList.toggle("body-lock");
+  menuList.forEach((a) => {
+    a.addEventListener("click", () => {
+      burgerBtn.classList.remove("active");
+      menuBtn.classList.remove("menu-active");
+    });
+  });
 });
 
 navItems.forEach((a) => {
