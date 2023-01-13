@@ -1,4 +1,11 @@
 const navItems = document.querySelectorAll(".header__menu li a");
+const burgerBtn = document.querySelector(".header__burger-btn");
+const menuBtn = document.querySelector(".header__menu");
+
+burgerBtn.addEventListener("click", function () {
+  burgerBtn.classList.toggle("active");
+  menuBtn.classList.toggle("menu-active");
+});
 
 navItems.forEach((a) => {
   a.addEventListener("click", () => {

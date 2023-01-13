@@ -71,46 +71,90 @@ $v-color: #737373;
     line-height: 32px;
     letter-spacing: 0.1px;
     color: $b-color;
-    margin-right: 132px;
+    margin-right: 130px;
+    @media (max-width: 600px) {
+      margin-right: 80px;
+    }
+    @media (max-width: 539px) {
+      margin-right: 50px;
+    }
   }
 
-  &__burger {
+  &__burger-btn {
     display: none;
+    overflow: hidden;
     @media (max-width: 425px) {
       display: block;
-    }
-    span {
-      display: flex;
-      width: 20px;
-      height: 2px;
-      background: $b-color;
-      margin-bottom: 6px;
+      position: relative;
+      z-index: 3;
+      cursor: pointer;
+      span {
+        display: block;
+        width: 30px;
+        height: 2px;
+        background: $b-color;
+        margin-bottom: 5px;
+      }
     }
   }
+  .active span {
+    transform: rotate(45deg);
+    transition: transform 0.3s;
+    position: fixed;
+    top: 50px;
+    right: 10px;
+    &:last-child {
+      transform: rotate(-45deg);
+      transition: transform 0.3s;
+      top: 50px;
+      right: 10px;
+    }
+  }
+
   &__menu {
     display: flex;
     @media screen and (max-width: 425px) {
-      display: none;
+      display: flex;
+      flex-direction: column;
+      background: $light;
+      width: 100%;
+      height: 100%;
+      padding: 20px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      transform: translate(-100%);
+      transition: transform 0.3s;
     }
+  }
+  .menu-active {
+    transform: translate(0);
   }
 
   &__menu-list {
     margin-right: 20px;
+    @media screen and (max-width: 510px) {
+      margin-right: 10px;
+    }
     &:last-child {
       margin: 0;
     }
-  }
-  &__menu-list a {
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 24px;
-    text-align: center;
-    letter-spacing: 0.2px;
-    color: $v-color;
-    margin-right: 20px;
-    text-decoration: none;
-    cursor: pointer;
+    @media (max-width: 425px) {
+      margin-bottom: 5px;
+    }
+    a {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 24px;
+      text-align: center;
+      letter-spacing: 0.2px;
+      color: $v-color;
+      margin-right: 20px;
+      text-decoration: none;
+      cursor: pointer;
+    }
   }
   .is-active {
     font-weight: 900;
