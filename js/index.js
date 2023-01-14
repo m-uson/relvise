@@ -3,6 +3,12 @@ const burgerBtn = document.querySelector(".header__burger-btn");
 const menuBtn = document.querySelector(".header__menu");
 const body = document.querySelector("body"); // .body-lock {overflow: hidden}
 const menuList = document.querySelectorAll("li a");
+const inputBtn = (document.getElementById("input-btn").onclick = myClick);
+
+function myClick() {
+  const input = document.getElementById("input");
+  input.value = type = "email";
+}
 
 burgerBtn.addEventListener("click", function () {
   burgerBtn.classList.toggle("active");
