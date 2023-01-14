@@ -7,7 +7,7 @@ const inputBtn = (document.getElementById("input-btn").onclick = myClick);
 
 function myClick() {
   const input = document.getElementById("input");
-  input.value = type = "email";
+  input.value = "";
 }
 
 burgerBtn.addEventListener("click", function () {
