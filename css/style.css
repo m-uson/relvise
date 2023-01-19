@@ -771,6 +771,7 @@ body {
   height: 50px;
   padding: 20px 130px 20px 20px;
   border-radius: 5px;
+  border: none;
 }
 @media screen and (max-width: 768px) {
   .logo__content-input input {
@@ -788,11 +789,13 @@ body {
 @media screen and (max-width: 375px) {
   .logo__content-input input {
     width: 330px;
+    padding: 20px 105px 20px 10px;
   }
 }
 @media screen and (max-width: 320px) {
   .logo__content-input input {
     width: 280px;
+    padding: 20px 80px 20px 10px;
   }
 }
 .logo__content-input input ::-moz-placeholder {
@@ -820,11 +823,11 @@ body {
   color: #737373;
 }
 .logo__content-input button {
-  height: 46px;
+  height: 45.4px;
   width: 117px;
   background: #ff7b47;
   border: 1px solid #e6e6e6;
-  border-radius: 0px 5px 5px 0px;
+  border-radius: 0px 3px 3px 0px;
   border: none;
   color: #ffffff;
   font-style: normal;
@@ -835,19 +838,21 @@ body {
   letter-spacing: 0.2px;
   cursor: pointer;
   position: absolute;
-  right: 0px;
-  bottom: 2px;
+  right: 2px;
+  bottom: 2.5px;
 }
 @media screen and (max-width: 768px) {
   .logo__content-input button {
     bottom: 2px;
     width: 90px;
+    height: 46px;
   }
 }
 @media screen and (max-width: 425px) {
   .logo__content-input button {
-    height: 40px;
-    right: 0;
+    height: 36px;
+    right: 2px;
+    bottom: 2px;
   }
 }
 @media screen and (max-width: 320px) {
