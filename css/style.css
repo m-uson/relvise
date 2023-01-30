@@ -158,7 +158,7 @@ body {
     background: #ffffff;
     width: 100%;
     height: 1000%;
-    padding: 90px 20px 20px 17px;
+    padding: 90px 20px 20px 9px;
     position: fixed;
     top: 0;
     left: 0;
@@ -233,6 +233,11 @@ body {
   position: relative;
   z-index: 1;
 }
+@media (max-width: 400px) {
+  .main__content {
+    padding: 140px 0 191px 0;
+  }
+}
 @media screen and (max-width: 375px) {
   .main__content {
     width: 340px;
@@ -288,48 +293,43 @@ body {
   }
 }
 .main__button {
-  height: 40px;
+  display: flex;
 }
-@media (max-width: 375px) {
+@media (max-width: 410px) {
   .main__button {
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    height: 100px;
-    text-align: center;
   }
 }
 .main__button-one {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-decoration: none;
   width: 187px;
   height: 48px;
   color: #ffffff;
   background-color: #ff7b47;
   border-radius: 37px;
-  padding: 10px 36px;
   cursor: pointer;
   border: none;
+  margin-right: 20px;
 }
-@media screen and (max-width: 375px) {
+@media (max-width: 410px) {
   .main__button-one {
-    margin-bottom: 20px;
-    width: 100%;
+    margin: 0 0 20px 0;
   }
 }
 .main__button-two {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: #ff7b47;
   text-decoration: none;
-  padding: 10px 36px;
-  width: 157px;
+  width: 187px;
   height: 48px;
   border: 1px solid #0d5c63;
   border-radius: 37px;
   cursor: pointer;
-}
-@media screen and (max-width: 375px) {
-  .main__button-two {
-    width: 100%;
-  }
 }
 
 .items {
