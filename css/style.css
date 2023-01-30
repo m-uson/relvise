@@ -124,7 +124,7 @@ body {
   .header__burger-btn {
     display: block;
     position: relative;
-    z-index: 3;
+    z-index: 13;
     cursor: pointer;
   }
   .header__burger-btn span {
@@ -157,12 +157,12 @@ body {
     flex-direction: column;
     background: #ffffff;
     width: 100%;
-    height: 100%;
+    height: 5000%;
     padding: 90px 20px 20px 17px;
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 1;
+    z-index: 10;
     transform: translate(-100%);
     transition: transform 0.3s;
   }
@@ -231,7 +231,7 @@ body {
   padding: 184px 0 191px 0;
   width: 500px;
   position: relative;
-  z-index: 2;
+  z-index: 1;
 }
 @media screen and (max-width: 375px) {
   .main__content {
